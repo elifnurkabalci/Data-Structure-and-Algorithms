@@ -52,20 +52,29 @@ public class CSE222Graph {
 
             //TextToImage tex = new TextToImage((userInput), ("graph/" + graph.filename + ".png"));
             
+            long startTime = System.currentTimeMillis();
             //BFS
-            /*BreadthFirst bfs = new BreadthFirst(map.getStart_point(), map.getEnd_point(), graph.getEdges());
-            ArrayList<int[]> shortestPath = bfs.findShortestPath();
+            BreadthFirst bfs = new BreadthFirst(map.getStart_point(), map.getEnd_point(), graph.getEdges());
+            ArrayList<int[]> shortestPathBFS = bfs.findShortestPath();
 
-            System.out.println("BFS # of steps: " + shortestPath.size());
-            graph.writeTxt(shortestPath, "BFS");*/
+            System.out.println("BFS # of steps: " + shortestPathBFS.size());
+            graph.writeTxt(shortestPathBFS, "BFS");
+            long endTime = System.currentTimeMillis();
+            long runningTime = endTime - startTime;
+        
+            System.out.println("Running time: " + runningTime + " milliseconds");
             
+            startTime = System.currentTimeMillis();
             //dijkstra
             Dijkstra diji = new Dijkstra(map.getStart_point(), map.getEnd_point(), graph.getEdges());
-            List<int[]> shortestPath = diji.findShortestPath(userInput);
+            List<int[]> shortestPathD = diji.findShortestPath(userInput);
 
-            System.out.println("Dijikstra # of steps: " + shortestPath.size());
-            graph.writeTxt(shortestPath, "DIJKSTRA");
-            
+            System.out.println("Dijikstra # of steps: " + shortestPathD.size());
+            graph.writeTxt(shortestPathD, "DIJKSTRA");
+            endTime = System.currentTimeMillis();
+            runningTime = endTime - startTime;
+        
+            System.out.println("Running time: " + runningTime + " milliseconds");
             //tex.turned(shortestPath);
 
         }    
