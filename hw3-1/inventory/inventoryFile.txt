@@ -1,0 +1,15 @@
+Electronics Shop Inventory Report
+Generated on: 2024-03-25
+---------------------------------------
+| No. | Category | Name | Price | Quantity |
+---------------------------------------
+| 1 | tv | bir | 20.0 | 10 |
+| 2 | tv | uc | 40.0 | 20 |
+| 3 | laptop | iki | 30.0 | 15 |
+---------------------------------------
+
+Summary:
+- Total Number of Devices: 3
+- Total Inventory Value: 1450.0
+
+End of Report
