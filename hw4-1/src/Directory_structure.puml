@@ -1,0 +1,192 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Directory",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1041382989 { 
+   	label=Directory
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Directory1041382989[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Directory</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   children: LinkedList&lt;FileSystemElement&gt; [0..*]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addElement(element: FileSystemElement)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ print(prefix: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ removeElement(element: FileSystemElement)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2189724 { 
+   	label=File
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   File2189724[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)File</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ print(prefix: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_495181077 { 
+   	label=FileSystem
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   FileSystem495181077[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FileSystem</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   root: Directory [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ changeDirectory(path: String): Directory</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createDirectory(name: String, parent: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ createFile(name: String, parent: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteDirectory(name: String, parent: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ deleteFile(name: String, parent: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ found(path: String): FileSystemElement</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getCurrentPath(dir: Directory): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ listContent(dir: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ moveelement(name: String, newParent: Directory)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ printDirectoryTree(dir: Directory, space: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ search(name: String, dir: Directory): FileSystemElement</TD></TR>
+<TR><TD ALIGN="LEFT" >+ sortDirectoryByDate(dir: Directory)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_573995631 { 
+   	label=FileSystemElement
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   FileSystemElement573995631[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FileSystemElement</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   dateCreated: Timestamp [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   name: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   parent: FileSystemElement [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ print(prefix: String)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Directory1041382989 -> FileSystemElement573995631[label="children
+[0..*]"];
+FileSystem495181077 -> Directory1041382989[label="root
+[0..1]"];
+FileSystemElement573995631 -> Directory1041382989[arrowhead=none, arrowtail=empty, dir=both];
+FileSystemElement573995631 -> File2189724[arrowhead=none, arrowtail=empty, dir=both];
+    
+}
+@enduml

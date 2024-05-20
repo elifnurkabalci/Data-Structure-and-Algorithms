@@ -1,0 +1,205 @@
+==== CONFIGS ====		
+{
+    "base_path": "c:\\Users\\e.kabalci2018\\Desktop\\hw4\\src",
+    "out": "c:\\Users\\e.kabalci2018\\Desktop\\hw4\\src\\javadoc",
+    "javadoc_executable": "C:\\Program Files\\Microsoft\\jdk-17.0.1.12-hotspot\\bin\\javadoc.exe",
+    "exclude": [],
+    "raw_params": ""
+}
+
+==== COMMAND ====
+"C:\Program Files\Microsoft\jdk-17.0.1.12-hotspot\bin\javadoc.exe" 
+	-sourcepath "c:\Users\e.kabalci2018\Desktop\hw4\src" 
+	-d "c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc" 
+	"c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java"
+	"c:\Users\e.kabalci2018\Desktop\hw4\src\File.java"
+	"c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java"
+	"c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java"
+	"c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java"
+
+
+==== JAVADOC OUTPUT ====
+Loading source file c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java...
+Loading source file c:\Users\e.kabalci2018\Desktop\hw4\src\File.java...
+Loading source file c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java...
+Loading source file c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java...
+Loading source file c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java...
+Constructing Javadoc information...
+Creating destination directory: "c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\"
+Building index for all the packages and classes...
+Standard Doclet version 17.0.1+12-LTS
+Building tree for all the packages and classes...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\Directory.html...
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:53: warning: no description for @param
+     * @param parent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:18: warning: no description for @param
+     * @param element
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:29: warning: no description for @param
+     * @param element
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:40: error: unknown tag: FileSystemElement
+     * @return LinkedList<FileSystemElement>
+                         ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:51: warning: no description for @param
+     * @param prefix
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:3: warning: no comment
+public class Directory extends FileSystemElement {
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Directory.java:6: warning: no comment
+    public Directory(String name, FileSystemElement parent) {
+           ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:63: warning: no comment
+    public abstract void print(String prefix); /* to help printing directory */
+                         ^
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\File.html...
+c:\Users\e.kabalci2018\Desktop\hw4\src\File.java:12: warning: no description for @param
+     * @param prefix
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\File.java:1: warning: no comment
+public class File extends FileSystemElement {
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\File.java:3: warning: no comment
+    public File(String name, FileSystemElement parent) {
+           ^
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\FileSystem.html...
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:17: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:18: warning: no description for @param
+     * @param parent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:32: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:33: warning: no description for @param
+     * @param parent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:46: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:47: warning: no description for @param
+     * @param parent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:69: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:70: warning: no description for @param
+     * @param parent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:88: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:89: warning: no description for @param
+     * @param newParent
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:106: warning: no description for @param
+     * @param path
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:134: warning: no description for @param
+     * @param name
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:135: warning: no description for @param
+     * @param dir
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:158: warning: no description for @param
+     * @param dir
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:159: warning: no description for @param
+     * @param space
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:183: warning: no description for @param
+     * @param dir
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:194: warning: no description for @param
+     * @param dir
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:209: warning: no description for @param
+     * @param dir
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:224: warning: no description for @param
+     * @param path
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:4: warning: no comment
+public class FileSystem {
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystem.java:7: warning: no comment
+    public FileSystem() {
+           ^
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\FileSystemElement.html...
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:3: warning: no comment
+public abstract class FileSystemElement {
+                ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:5: warning: no comment
+    protected Timestamp dateCreated;
+                        ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:4: warning: no comment
+    protected String name;
+                     ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:6: warning: no comment
+    protected FileSystemElement parent;
+                                ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\FileSystemElement.java:8: warning: no comment
+    public FileSystemElement(String name, FileSystemElement parent) {
+           ^
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\Main.html...
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:245: warning: no description for @param
+     * @param args
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:246: warning: no description for @throws
+     * @throws Exception
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:3: warning: no comment
+public class Main {
+       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:83: warning: no comment
+    public static void changeDirectory() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:113: warning: no comment
+    public static void createDirectory() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:103: warning: no comment
+    public static void createFile() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:133: warning: no comment
+    public static void deleteDirectory() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:123: warning: no comment
+    public static void deleteFile() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:96: warning: no comment
+    public static void listContens() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:10: warning: no comment
+    public static void menu() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:143: warning: no comment
+    public static void movElement() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:172: warning: no comment
+    public static void printDirectoryTree() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:158: warning: no comment
+    public static void search() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:180: warning: no comment
+    public static void sortDirectoryByDate() {
+                       ^
+c:\Users\e.kabalci2018\Desktop\hw4\src\Main.java:187: warning: no comment
+    public static void test() {
+                       ^
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\package-summary.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\package-tree.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\overview-tree.html...
+Building index for all classes...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\allclasses-index.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\allpackages-index.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\index-all.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\index.html...
+Generating c:\Users\e.kabalci2018\Desktop\hw4\src\javadoc\help-doc.html...
+1 error
+51 warnings
+
+
